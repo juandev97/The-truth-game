@@ -1,0 +1,416 @@
+fileFormatVersion: 2
+guid: 63318220e07925a45a4601bb66206382
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8954121865811809574
+    second: ESPECTRO CICLO MUERTO COMPLETO_0
+  - first:
+      213: 7334369032694681283
+    second: ESPECTRO CICLO MUERTO COMPLETO_1
+  - first:
+      213: -3310395520195346051
+    second: ESPECTRO CICLO MUERTO COMPLETO_2
+  - first:
+      213: -4253329821120261244
+    second: ESPECTRO CICLO MUERTO COMPLETO_3
+  - first:
+      213: 5472823217176034746
+    second: ESPECTRO CICLO MUERTO COMPLETO_4
+  - first:
+      213: -8835064934202297591
+    second: ESPECTRO CICLO MUERTO COMPLETO_5
+  - first:
+      213: -3039229929654715765
+    second: ESPECTRO CICLO MUERTO COMPLETO_6
+  - first:
+      213: -1256955224218886305
+    second: ESPECTRO CICLO MUERTO COMPLETO_7
+  - first:
+      213: 1956228885032833191
+    second: ESPECTRO CICLO MUERTO COMPLETO_8
+  - first:
+      213: 9178412396713837620
+    second: ESPECTRO CICLO MUERTO COMPLETO_9
+  - first:
+      213: 5159518559194118717
+    second: ESPECTRO CICLO MUERTO COMPLETO_10
+  - first:
+      213: -8452664904583840064
+    second: ESPECTRO CICLO MUERTO COMPLETO_11
+  - first:
+      213: -4843869160350214235
+    second: ESPECTRO CICLO MUERTO COMPLETO_12
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 1
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ESPECTRO CICLO MUERTO COMPLETO_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 78
+        width: 743
+        height: 1343
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 625554f556e634c70800000000000000
+      internalID: 8954121865811809574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ESPECTRO CICLO MUERTO COMPLETO_1
+      rect:
+        serializedVersion: 2
+        x: 920
+        y: 107
+        width: 951
+        height: 1394
+      alignment: 9
+      pivot: {x: 0.43811253, y: 0.36630324}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ce446da6c9e8c560800000000000000
+      internalID: 7334369032694681283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ESPECTRO CICLO MUERTO COMPLETO_2
+      rect:
+        serializedVersion: 2
+        x: 1962
+        y: 87
+        width: 1148
+        height: 1334
+      alignment: 9
+      pivot: {x: 0.36328742, y: 0.38970262}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7146b840dc1f02d0800000000000000
+      internalID: -3310395520195346051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ESPECTRO CICLO MUERTO COMPLETO_3
+      rect:
+        serializedVersion: 2
+        x: 3250
+        y: 58
+        width: 1413
+        height: 902
+      alignment: 9
+      pivot: {x: 0.34033254, y: 0.41300103}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4831d83101329f4c0800000000000000
+      internalID: -4253329821120261244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ESPECTRO CICLO MUERTO COMPLETO_4
+      rect:
+        serializedVersion: 2
+        x: 4863
+        y: 0
+        width: 1403
+        height: 754
+      alignment: 9
+      pivot: {x: 0.3042368, y: 0.5390284}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abdb94248bf53fb40800000000000000
+      internalID: 5472823217176034746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ESPECTRO CICLO MUERTO COMPLETO_5
+      rect:
+        serializedVersion: 2
+        x: 6533
+        y: 0
+        width: 1383
+        height: 725
+      alignment: 9
+      pivot: {x: 0.2872206, y: 0.56764925}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 903bc55a04b836580800000000000000
+      internalID: -8835064934202297591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ESPECTRO CICLO MUERTO COMPLETO_6
+      rect:
+        serializedVersion: 2
+        x: 8235
+        y: 0
+        width: 1363
+        height: 804
+      alignment: 9
+      pivot: {x: 0.3416722, y: 0.5488016}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8af1344b7c72d5d0800000000000000
+      internalID: -3039229929654715765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ESPECTRO CICLO MUERTO COMPLETO_7
+      rect:
+        serializedVersion: 2
+        x: 9905
+        y: 0
+        width: 1353
+        height: 902
+      alignment: 9
+      pivot: {x: 0.3332525, y: 0.48912525}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5f9cd912e56e8ee0800000000000000
+      internalID: -1256955224218886305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ESPECTRO CICLO MUERTO COMPLETO_8
+      rect:
+        serializedVersion: 2
+        x: 11560
+        y: 10
+        width: 1413
+        height: 1039
+      alignment: 9
+      pivot: {x: 0.34727475, y: 0.40559065}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a09dbf6ecbe52b10800000000000000
+      internalID: 1956228885032833191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ESPECTRO CICLO MUERTO COMPLETO_9
+      rect:
+        serializedVersion: 2
+        x: 13261
+        y: 0
+        width: 1422
+        height: 1274
+      alignment: 9
+      pivot: {x: 0.30685282, y: 0.3537102}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4348b2c0275406f70800000000000000
+      internalID: 9178412396713837620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ESPECTRO CICLO MUERTO COMPLETO_10
+      rect:
+        serializedVersion: 2
+        x: 15038
+        y: 0
+        width: 1383
+        height: 1314
+      alignment: 9
+      pivot: {x: 0.34396183, y: 0.32830307}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3afcc41bca4a9740800000000000000
+      internalID: 5159518559194118717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ESPECTRO CICLO MUERTO COMPLETO_11
+      rect:
+        serializedVersion: 2
+        x: 16875
+        y: 0
+        width: 1363
+        height: 1284
+      alignment: 9
+      pivot: {x: 0.33447587, y: 0.34720984}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ce7edcad0a12ba80800000000000000
+      internalID: -8452664904583840064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ESPECTRO CICLO MUERTO COMPLETO_12
+      rect:
+        serializedVersion: 2
+        x: 18585
+        y: 0
+        width: 1336
+        height: 1314
+      alignment: 9
+      pivot: {x: 0.30910397, y: 0.3133729}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a71bde99ae17ccb0800000000000000
+      internalID: -4843869160350214235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
