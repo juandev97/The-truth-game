@@ -139,7 +139,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   HP: {fileID: 3097257683952954094, guid: da8b8cd2c5780f14393ee294d2e02dfa, type: 3}
   EP: {fileID: 5280112792084812493, guid: 29b6b34e4c5c722498ee8ee9dd10ebad, type: 3}
-  Ply: {fileID: 4945072846821069923, guid: 98d24b4ce8fad0a4abefcaa3a1f4aa67, type: 3}
+  manager: {fileID: 3747810917788806273, guid: bc2fc98f2b1010a4abeb1332d8ae2174, type: 3}
 --- !u!95 &5648327817320572188
 Animator:
   serializedVersion: 3

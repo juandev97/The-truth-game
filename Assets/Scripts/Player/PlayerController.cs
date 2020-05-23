@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -12,7 +13,7 @@ public class PlayerController : MonoBehaviour
 
     public bool attackReady = false;
  
-    
+    public int hash ;
 
     //jump 
     public float jumpForece;
@@ -21,12 +22,15 @@ public class PlayerController : MonoBehaviour
     // ataques 
     [SerializeField]
     GameObject SwordHitbox;
+
+    private PlayerMana manaSystem;
     [SerializeField]
     private float damageVal;
     public bool atack;
     [SerializeField]
     float waitAttack;
 
+    public ParticleSystem particulas;
     Rigidbody2D rb;
     Collider2D playerCol;
 
@@ -35,6 +39,7 @@ public class PlayerController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        manaSystem = GetComponent<PlayerMana>();
         playerCol = GetComponent<Collider2D>();
         waitAttack = .86f;
         rb = GetComponent<Rigidbody2D>();
@@ -42,9 +47,11 @@ public class PlayerController : MonoBehaviour
         jump = false;
         anim = GetComponent<Animator>();
         SwordHitbox.SetActive(false);
-        damageVal = 10f;
+        damageVal = 50f;
         anim.SetInteger("Xattack",0);
         barraX.enabled = false;
+        particulas.Stop();
+        
     }
 
     // Update is called once per frame
@@ -59,12 +66,12 @@ public class PlayerController : MonoBehaviour
         }
 
 // atacar
-    damageVal = 50f;
+    
     if(Input.GetKeyDown(KeyCode.A))
     {
         if(!atack){
         atack = true;  
-        damageVal = 50f;
+        Damage = 50f;
         anim.SetTrigger("IsAttacking");
         StartCoroutine(DoAtacar(waitAttack));
         }
@@ -78,17 +85,15 @@ CargarAttack();
      if(Input.GetKey(KeyCode.RightArrow) && !atack)
      {
          correr(speed);
-          if (GetComponent<SpriteRenderer>().flipX){
-             GetComponent<SpriteRenderer>().flipX = false;
-         }
-     }
+         transform.localScale = new Vector3(.1f,.1f,1);
+       
+    }
+     
 //'mover izquierda'
      if(Input.GetKey(KeyCode.LeftArrow) && !atack)
      {
         correr(-speed);
-        if (!GetComponent<SpriteRenderer>().flipX){
-             GetComponent<SpriteRenderer>().flipX = true;
-         }
+        transform.localScale = new Vector3(-.1f,.1f,1);
         
      }
 
@@ -121,9 +126,7 @@ void correr(float vel){
 }
 // atacar
 
-public float getDamage(){
-    return damageVal;
-}
+
 
 IEnumerator DoAtacar(float t){
     SwordHitbox.SetActive(true);
@@ -153,32 +156,67 @@ void CargarAttack(){
             downTime = Time.time;
             anim.SetInteger("Xattack",1);
             attackReady = true;
+            particulas.Play();
             
         }
     }
 // descargar
 
+
     if(Input.GetKeyUp(KeyCode.D))
     {
-        attackReady = false;
         pressTime = Time.time - downTime;
-        StartCoroutine(XAnimation());
-        StartCoroutine(DoAtacar(waitAttack));
-        damageVal = CalculateHoldDown(pressTime);
+        float holdTimeNomalized = Mathf.Clamp01(pressTime/ 2f);
+        attackReady = false;
         barraX.enabled = false;
+//comprobamos el mana
+        if(manaSystem.GastarMana(holdTimeNomalized*10)){
+           
+            
+            StartCoroutine(XAnimation());
+            StartCoroutine(DoAtacar(waitAttack));        
+            Damage = CalculateHoldDown(pressTime);
+            
+            particulas.Stop();
+            if(holdTimeNomalized == 1)
+                EnergyWaveInvocate();
+        }else{
+            particulas.Stop();
+            anim.SetInteger("Xattack",0);           
+            
+        }
+      
         }
     
     if(Input.GetKey(KeyCode.D)){
         barraX.enabled = true;
         pressTime = Time.time - downTime;
         barraX.fillAmount = pressTime/2f;
+        var emision = particulas.emission;
+        emision.rateOverTime =  20f* Mathf.Clamp01(pressTime/2f); 
     }
     }
 
+public float Damage{
+    get{return damageVal;}
+    set{damageVal = value;}
+}
+
 private float CalculateHoldDown(float holdTime){
-    float maxForceHoldDownTime = 2f;
+    float maxForceHoldDownTime = 3f;
     float holdTimeNomalized = Mathf.Clamp01(holdTime/ maxForceHoldDownTime);
+    damageVal= 50f;
     damageVal = (1+holdTimeNomalized) * damageVal;
     return damageVal;
     }
+
+
+public Transform Fuente;
+public GameObject Bullet;
+
+
+void EnergyWaveInvocate(){
+    GameObject wave = (GameObject)Instantiate(Bullet, Fuente.position  , transform.rotation);
+    Destroy(wave,10f);
+}
 }

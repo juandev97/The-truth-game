@@ -7,6 +7,7 @@ public class Restart : MonoBehaviour
 {
 
 public void reiniciar(){
-        SceneManager.LoadScene("un");
+
+        SceneManager.LoadScene("Menu");
     }
 }

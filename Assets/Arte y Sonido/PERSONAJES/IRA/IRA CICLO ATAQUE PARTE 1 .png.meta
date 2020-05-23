@@ -1,9 +1,27 @@
 fileFormatVersion: 2
 guid: baa1e0ac1b92eb94f899baa7a5204804
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 7350822077900872123
+    second: IRA CICLO ATAQUE PARTE 1 _0
+  - first:
+      213: 4891625812033725475
+    second: IRA CICLO ATAQUE PARTE 1 _1
+  - first:
+      213: -5147410231600918454
+    second: IRA CICLO ATAQUE PARTE 1 _2
+  - first:
+      213: 1028157936572848116
+    second: IRA CICLO ATAQUE PARTE 1 _3
+  - first:
+      213: -5271545362376049950
+    second: IRA CICLO ATAQUE PARTE 1 _4
+  - first:
+      213: 3075639833120830522
+    second: IRA CICLO ATAQUE PARTE 1 _5
   externalObjects: {}
-  serializedVersion: 10
+  serializedVersion: 11
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -40,7 +58,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -57,6 +75,7 @@ TextureImporter:
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  applyGammaDecoding: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -70,9 +89,147 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: IRA CICLO ATAQUE PARTE 1 _0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 3038
+        height: 3795
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb95168cbbd530660800000000000000
+      internalID: 7350822077900872123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IRA CICLO ATAQUE PARTE 1 _1
+      rect:
+        serializedVersion: 2
+        x: 3977
+        y: 0
+        width: 2945
+        height: 3966
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 324e66452cb82e340800000000000000
+      internalID: 4891625812033725475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IRA CICLO ATAQUE PARTE 1 _2
+      rect:
+        serializedVersion: 2
+        x: 7834
+        y: 0
+        width: 3158
+        height: 4001
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a405730aaa9b098b0800000000000000
+      internalID: -5147410231600918454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IRA CICLO ATAQUE PARTE 1 _3
+      rect:
+        serializedVersion: 2
+        x: 11974
+        y: 0
+        width: 3030
+        height: 4001
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f75c662230c44e00800000000000000
+      internalID: 1028157936572848116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IRA CICLO ATAQUE PARTE 1 _4
+      rect:
+        serializedVersion: 2
+        x: 15943
+        y: 167
+        width: 2348
+        height: 3834
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2eab73a3c65b7d6b0800000000000000
+      internalID: -5271545362376049950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IRA CICLO ATAQUE PARTE 1 _5
+      rect:
+        serializedVersion: 2
+        x: 19521
+        y: 594
+        width: 1930
+        height: 3407
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a34753ef12edeaa20800000000000000
+      internalID: 3075639833120830522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

@@ -8,7 +8,7 @@ public class SpawnEnemy : MonoBehaviour {
     public bool permitido;
     private void Start() {
         permitido = true;
-        InvokeRepeating("SpawnAMonster",0f,3f);
+        InvokeRepeating("SpawnAMonster",0f,3.8f);
     }
 
     void SpawnAMonster()

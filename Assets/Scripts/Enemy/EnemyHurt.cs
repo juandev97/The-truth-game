@@ -8,7 +8,7 @@ public class EnemyHurt : MonoBehaviour
     Animator EnemyAnim;
     Rigidbody2D Enemy_rb;
     Collider2D EnemyCol;
-    int contador = 0;
+
     [SerializeField]
     GameObject HP;
 
@@ -16,26 +16,32 @@ public class EnemyHurt : MonoBehaviour
     GameObject EP;
     
     
-    public GameObject Ply;
+    private GameObject Ply;
 
   
     PlayerController control;
 
+    GameObject manager;
+    contador conta;
     // Start is called before the first frame update
     void Start()
     {
+        Ply = GameObject.FindGameObjectWithTag("Player");
+        manager = GameObject.FindGameObjectWithTag("Manager");
         vida = 100f;
         EnemyAnim = GetComponent<Animator>();
         Enemy_rb = GetComponent<Rigidbody2D>();
         EnemyCol = GetComponent<Collider2D>();
         control = Ply.GetComponent<PlayerController>();
+        conta = manager.GetComponent<contador>();
     }
 
     private void OnTriggerExit2D(Collider2D other) {
         float damageSword;
         if(other.gameObject.tag == "Sword"){
-            damageSword = 50f + control.getDamage();
-            if(vida< damageSword){
+            damageSword = control.Damage;
+            
+            if(vida<= damageSword){
                     morir();
             }else
             {
@@ -61,7 +67,7 @@ public class EnemyHurt : MonoBehaviour
                     Instantiate(EP,transform.position,Quaternion.identity);
                 }
                
-                contador+=1;
+                conta.sumar();
 
     }
 }
