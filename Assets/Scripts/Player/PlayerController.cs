@@ -182,7 +182,8 @@ void CargarAttack(){
                 EnergyWaveInvocate();
         }else{
             particulas.Stop();
-            anim.SetInteger("Xattack",0);           
+            anim.SetInteger("Xattack",0);  
+            atack = false;         
             
         }
       
